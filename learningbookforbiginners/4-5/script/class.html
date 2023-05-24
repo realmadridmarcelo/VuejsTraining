@@ -1,0 +1,17 @@
+<input type="text" @input="setText" :value="text">
+<p>{{text}}</p>
+
+<script>
+    new Vue({
+        data() {
+            return {
+                text: "ffffff"
+            };
+        },
+        methods: {
+            setText(e) {
+                this.text = e.target.value;
+            }
+        }
+    })
+</script>
